@@ -5,7 +5,7 @@
 #'
 #' @return A tibble data.frame
 #' 
-#' @importFrom dplyr %>%
+#' @importFrom dplyr %>% .data
 #' @export
 #'
 #' @examples
@@ -13,7 +13,7 @@
 #' check_tidyselect(dummy_df)
 check_tidyselect <- function(df) {
   df %>%
-    dplyr::filter(col_b %in% c(4, 5)) %>%
+    dplyr::filter(.data$col_b %in% c(4, 5)) %>%
     dplyr::select("col_a", "col_c") %>%
     dplyr::rename(c = "col_c")
 }

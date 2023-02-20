@@ -2,3 +2,4 @@
 
 export(check_tidyselect)
 importFrom(dplyr,"%>%")
+importFrom(dplyr,.data)
