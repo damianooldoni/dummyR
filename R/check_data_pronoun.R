@@ -4,6 +4,8 @@
 #' @param df a tibble data.frame with at least two columns: `col_a` and `col_b`
 #'
 #' @return A tibble data.frame
+#' 
+#' @importFrom dplyr %>%
 #' @export
 #'
 #' @examples
@@ -11,6 +13,6 @@
 #' check_tidyselect(dummy_df)
 check_tidyselect <- function(df) {
   df %>%
-    select(col_a, col_b) %>%
-    filter(col_a == 1)
+    dplyr::select(col_a, col_b) %>%
+    dplyr::filter(col_a == 1)
 }
