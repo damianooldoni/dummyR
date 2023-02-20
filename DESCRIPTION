@@ -1,0 +1,27 @@
+Package: dummyr
+Title: Test whatever I need to check and experiment as much as I want
+Version: 0.0.1
+Authors@R: c(
+    person("Damiano", "Oldoni", email = "damiano.oldoni@inbo.be",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3445-7562"))
+  )
+Description: Everything I need to test can be done in a reproducible way by using this dummy R package.
+License: MIT + file LICENSE
+BugReports: https://github.com/inbo/dummyr/issues
+Depends: 
+    R (>= 3.5.0)
+Imports:
+    dplyr (>= 1.1.0)
+Suggests:
+    covr,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder:
+    knitr
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
