@@ -5,10 +5,12 @@
 \title{Check possible notes/warnings while using .data$ pronoun and NSE/SE
 evaluation, NSE/SE}
 \usage{
-check_tidyselect(df)
+check_tidyselect(df, colToChange)
 }
 \arguments{
 \item{df}{a tibble data.frame with at least two columns: \code{col_a} and \code{col_b}}
+
+\item{colToChange}{character with column name to change}
 }
 \value{
 A tibble data.frame
@@ -19,5 +21,5 @@ evaluation, NSE/SE
 }
 \examples{
 library(dummyr)
-check_tidyselect(dummy_df)
+check_tidyselect(dummy_df, "col_c")
 }
