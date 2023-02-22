@@ -14,7 +14,7 @@
 #' check_tidyselect(dummy_df, "col_c")
 check_tidyselect <- function(df, colToChange) {
   df %>%
-    dplyr::filter(.data$col_b %in% c(4, 5)) %>%
+    dplyr::filter("col_b" %in% c(4, 5)) %>%
     dplyr::select("col_a", "col_c") %>%
     dplyr::rename(c := !!colToChange)
 }
